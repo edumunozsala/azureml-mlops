@@ -7,8 +7,7 @@ on:
       - main    
 
 jobs:
-  job2:
-    name: Test code
+  Testcode:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
