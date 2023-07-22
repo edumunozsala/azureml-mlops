@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code: src/model
+code: model
 command: >-
   python train.py
   --training_data ${{inputs.training_data}}
@@ -7,9 +7,9 @@ command: >-
 inputs:
   training_data: 
     type: uri_folder 
-    path: experimentation/data
+    path: ../experimentation/data
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: mlops-compute
-experiment_name: 
-description: 
+experiment_name: mlops-run-job
+description: Experiment for runing a job from CLI v2
