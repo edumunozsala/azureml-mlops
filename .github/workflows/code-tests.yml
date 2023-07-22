@@ -7,7 +7,7 @@ on:
       - main    
 
 jobs:
-  job1:
+  job2:
     name: Test code
     runs-on: ubuntu-latest
     steps:
